@@ -23,6 +23,9 @@
                             <label for="jenis_produk" class="form-label">Jenis Produk</label>
                             <select class="form-select" id="jenis_produk" name="jenis_produk">
                                 <option selected disabled>Pilih Jenis Produk</option>
+                                @foreach ($jenis_produk as $jenis)
+                                    <option value="{{ $jenis }}">{{ $jenis }}</option>
+                                @endforeach
                             </select>
                         </div>
                     </div>

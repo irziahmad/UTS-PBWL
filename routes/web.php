@@ -22,5 +22,6 @@ Route::get('/tabel_produk', function () {
     ));
 })->name('produk.tabel_produk');
 Route::get('/tambah_produk', function () {
-    return view('produk.tambah_produk');
+    $jenis_produk = ['Alat Tulis', 'Elektronik', 'Sembako', 'Pakaian', 'Makanan']; // Contoh data
+    return view('produk.tambah_produk', compact('jenis_produk'));
 })->name('produk.tambah_produk');
