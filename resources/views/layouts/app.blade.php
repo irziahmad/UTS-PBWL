@@ -22,6 +22,10 @@
                 font-weight: 600;
             }
 
+            .card-title {
+                font-weight: 600;
+            }
+
             .nav-link {
                 color: gray !important;
                 transition: color 0.3s ease;
